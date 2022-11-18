@@ -1,0 +1,206 @@
+:root {
+  --pink: #ffa3b0;
+  --purple: #495ce6;
+  --blue: #4285f2;
+  --teal: #05bc9e;
+  --orange: #ff7004;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+#button_trans {
+  margin: 0 1em;
+}
+
+.profile-pic {
+  background: bisque;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+details:focus,
+summary:focus {
+  outline: none;
+}
+
+.translation {
+  color: #888;
+}
+
+summary {
+  color: rgb(179, 179, 179);
+  /* text-transform: uppercase; */
+}
+
+.chat_message {
+  font-size: 18px;
+}
+
+.secondary {
+  background: #fff;
+  color: #888;
+  border: 1px solid #888;
+  border-radius: 5px;
+  /* max-width: 400px; */
+}
+
+.primary {
+  border-radius: 5px;
+  /* max-width: 400px; */
+}
+
+.users {
+  text-transform: capitalize;
+}
+
+button#back {
+  border-radius: 2em;
+  padding: 0.5em 1em;
+  background: #5f636f;
+  font-size: 14px;
+}
+
+.secondary:hover {
+  border: #6b47b8;
+  color: #fff;
+}
+
+.trans-button-container {
+  margin-right: auto;
+}
+
+.trans-button-container button {
+  margin-left: 0 !important;
+}
+
+#chatroom__title__container {
+  text-align: center;
+  border-bottom: 1px solid #eeeeee;
+}
+
+#chatroom__title {
+  padding: 10px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+#locationbutton {
+  border-radius: 50%;
+  padding: 7px 12px;
+  margin: 0 0.5em 0 0.3em;
+  color: #7c5cbf;
+  border-color: grey;
+}
+
+#locationbutton:hover {
+  background-color: white;
+  border: 1px solid grey;
+  color: #7c5cbf;
+}
+
+.bg {
+  background-color: #7c5cbf;
+  color: white !important;
+}
+
+.bg:hover {
+  background-color: #7c5cbf !important;
+  color: white !important;
+}
+
+#usersContent {
+  text-align: initial;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  background: #2c2f3a;
+  color: #fff;
+}
+
+.user-toggler {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+
+.user-toggler:hover {
+  background-color: #fff;
+}
+
+.user-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  font-size: 13px;
+}
+
+#sidebar {
+  display: none;
+}
+
+/* Desktop Only */
+@media (min-width: 768px) {
+  #sidebar {
+    display: initial;
+  }
+  #back {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+  .user-toggler {
+    display: none;
+  }
+}
+
+/* Mobile Only */
+@media (max-width: 768px) {
+  #chatroom__title {
+    width: fit-content;
+    display: inline-block;
+  }
+}
+
+/* my-tooltip container */
+.my-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* my-tooltip text */
+.my-tooltip .my-tooltiptext {
+  visibility: hidden;
+  width: max-content;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 6px;
+
+  /* Position the my-tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+
+  width: 120px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+/* Show the my-tooltip text when you mouse over the my-tooltip container */
+.my-tooltip:hover .my-tooltiptext {
+  visibility: visible;
+}
+
+/* Mobile only */
+@media (max-width: 768px) {
+  .my-tooltip .my-tooltiptext {
+    width: 120px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+  }
+}

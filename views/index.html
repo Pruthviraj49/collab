@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="../static/img/favicon.png" />
+  <!-- Home CSS -->
+  <link rel="stylesheet" href="static/css/home.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <style>
+    .nav-blue:hover {
+      color: var(--blue) !important;
+    }
+
+    .nav-purple:hover {
+      color: var(--purple) !important;
+    }
+
+    .nav-teal:hover {
+      color: var(--teal) !important;
+    }
+
+    .nav-orange:hover {
+      color: var(--orange) !important;
+    }
+
+    .page-container {
+      margin-top: 60px;
+    }
+
+    .service-btn {
+      background: transparent;
+      outline: none;
+      border: 2px solid #888;
+      border-radius: 10px;
+      margin: 12px 0;
+      min-height: 150px;
+      width: 100%;
+      font-size: 30px;
+      color: #888;
+      font-weight: 600;
+      transition: all ease-in 0.1s;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-container container">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top scrolled">
+      <div class="container-fluid">
+        <a class="navbar-brand me-auto" href="/">Collab!</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="me-auto"></ul>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link nav-blue" href="translator.html">Translate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-purple" href="chat_join.html">Chat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-teal" href="learner.html">Practice</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-orange" href="test.html">Quiz</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li> -->
+          </ul>
+          <a href="#services">
+            <button class="btn btn-outline-dark" type="submit" style="
+                  border: 2px solid;
+                  font-weight: 600;
+                  border-radius: 1.3em;
+                ">
+              Get Started
+            </button>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="row hero">
+      <div class="col-md-6 hero-outer-text-container">
+        <div class="container-xsm hero-inner-text-container">
+          <h1>Learn <br />New Languages with ease!</h1>
+          <p>
+            Feeling stuck while learning a new language? Don't worry, we've
+            got you covered! Learning a new language has never been this fun
+            and easy before, Click below to get started.
+          </p>
+          <a href="#services">
+            <button class="btn btn-primary" type="submit" style="
+                  border-radius: 1.3em;
+                  padding: 8px 23px;
+                  background: #495ce6;
+                ">
+              Get Started
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="static/img/hero.png" alt="People talking" style="width: 100%" />
+      </div>
+    </div>
+    <div class="features-container">
+      <h1>Why Us?</h1>
+      <div class="row" style="justify-content: space-evenly">
+        <div class="feature col-md-3">
+          <img src="static/img/interact.png" alt="" style="width: 30%" />
+          <h3>Interactive Learning</h3>
+          <p>
+            Chat with people around the world with our real-time multilingual
+            chatrooms without worrying about language barriers! Your safety is
+            assured with our special abuse protection feature.
+          </p>
+        </div>
+
+        <div class="feature col-md-3">
+          <img src="static/img/headphones.png" alt="" style="width: 30%" />
+          <h3>Engaging audio</h3>
+          <p>
+            Learn by listening. Helps you not only learn new vocabulary but
+            also improve your pronunciation. It's a great way to get started
+            when learning a new language!
+          </p>
+        </div>
+
+        <div class="feature col-md-3">
+          <img src="static/img/practice.png" alt="" style="width: 30%" />
+          <h3>Practice</h3>
+          <p>
+            Practicing helps you know your flaws and thus rectifying them.
+            After all, practice is the only way to become proficient in a new
+            skill or behavior!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <div class="services" id="services">
+      <h1>What We Offer</h1>
+      <div class="row" style="justify-content: center">
+        <div class="col-md-5">
+          <a href="translator.html">
+            <button class="service-btn blue">
+              <div class="row">
+                <div class="col-7 text-col">
+                  <div>Translate</div>
+                </div>
+                <div class="col-5">
+                  <span class="iconify" data-icon="heroicons-outline:translate" data-inline="false">
+                  </span>
+                </div>
+              </div>
+            </button>
+          </a>
+        </div>
+        <div class="col-md-5">
+          <a href="chat_join.html">
+            <button class="service-btn purple">
+              <div class="row">
+                <div class="col-7 text-col">
+                  <div>Chat</div>
+                </div>
+                <div class="col-5">
+                  <span class="iconify" data-icon="cil:chat-bubble" data-inline="false">
+                  </span>
+                </div>
+              </div>
+            </button>
+          </a>
+        </div>
+        <div class="col-md-5">
+          <a href="learner.html">
+            <button class="service-btn teal">
+              <div class="row">
+                <div class="col-7 text-col">
+                  <div>Learn Phrases</div>
+                </div>
+                <div class="col-5">
+                  <span class="iconify" data-icon="fluent:learning-app-20-regular" data-inline="false"></span>
+                </div>
+              </div>
+            </button>
+          </a>
+        </div>
+        <div class="col-md-5">
+          <a href="test.html">
+            <button class="service-btn orange">
+              <div class="row">
+                <div class="col-7 text-col">
+                  <div>Quiz</div>
+                </div>
+                <div class="col-5">
+                  <span class="iconify" data-icon="fluent:quiz-new-24-regular" data-inline="false"></span>
+                </div>
+              </div>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg page-footer font-small unique-color-dark">
+    <!-- <div style="background-color: var(--purple)">
+      <div class="container"> -->
+    <!-- Grid row-->
+    <!-- <div class="row py-4 d-flex align-items-center"> -->
+    <!-- Grid column -->
+    <!-- <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <h6 class="mb-0">Contribute to this project on Github!</h6>
+          </div> -->
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <!-- <div class="col-md-6 col-lg-7 text-center text-md-right">
+             
+              <a
+                class="git-ic"
+                style="font-size: 25px"
+                href="https://github.com/"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </div> -->
+    <!-- Grid column -->
+    <!-- </div> -->
+    <!-- Grid row-->
+    <!-- </div> -->
+    <!-- </div> -->
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
+      <!-- Grid row -->
+      <div class="row mt-2 ">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-150"></h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px" />
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-8 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-3" style="
+        margin: auto;
+        width: auto;">
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-150 padding-2">Features</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px" />
+          <p>
+            <a href="translator.html">Translation</a>
+          </p>
+          <p>
+            <a href="chat_join.html">Chat</a>
+          </p>
+          <p>
+            <a href="learner.html">Learn</a>
+          </p>
+          <p>
+            <a href="test.html">Quiz</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-8 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" style="
+            margin: auto;
+            width: auto;">
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-150">Contact Us</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px" />
+          <div class="teammate">
+            <div class="profile">
+              <!-- <img -->
+              <!-- src="https://avatars3.githubusercontent.com/u/52544343?s=400&u=69ebd877643b1e35cfe21ce033988dc19f8ea182&v=4" -->
+              <!-- alt="" /> -->
+            </div>
+            <div class="name">
+              <a target="_blank" href="https://github.com/Pruthviraj49">
+                Pruthviraj Suryawanshi
+              </a>
+            </div>
+          </div>
+
+          <div class="teammate">
+            <div class="profile">
+              <!-- <img src="static/img/Siddhi.jpg" alt="" /> -->
+            </div>
+            <div class="name">
+              <a target="_blank" href="https://github.com/samahakal">
+                Shubham Mahakal
+              </a>
+            </div>
+          </div>
+
+          <!-- <div class="teammate">
+              <div class="profile">
+                <img
+                  src="https://avatars3.githubusercontent.com/u/46474346?s=460&u=d99535a9bd008a2089fbf0d8323750eaedadd131&v=4"
+                  alt=""
+                />
+              </div>
+              <div class="name">
+                <a target="_blank" href="https://github.com/SakshiUppoor">
+                  
+                </a>
+              </div>
+            </div> -->
+        </div>
+
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+      © 2022 Copyright:
+      <a href="#"> Collab.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+<script>
+    // function goto(page) {
+    //   window.location.href = `${page}.html`;
+    // }
+    // $(function () {
+    //   $(document).scroll(function () {
+    //     var $nav = $("nav");
+    //     $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+    //   });
+    // });
+</script>
+
+</html>

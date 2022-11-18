@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --pink: #ffa3b0;
+  --purple: #495ce6;
+  --blue: #4285f2;
+  --teal: #05bc9e;
+  --orange: #ff7004;
+}
+
+* {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+}
+
+#navbarNavDropdown {
+  position: fixed;
+  right: 1em;
+}
+
+.panel {
+  padding: 1.5em;
+  background: rgb(16, 216, 203);
+  text-align: center;
+  border-radius: 0.5em;
+  color: #fff;
+}
+
+.translated {
+  font-size: 2.1vw;
+  display: inline-block;
+  color: #fff;
+  font-weight: 600;
+}
+
+.speaker {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+ion-icon {
+  font-size: 0.7em;
+  color: rgba(255, 255, 255, 0.801);
+}
+
+.pronunciation {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.603);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5em;
+  margin: 1.5em;
+}
+/*
+    .p1{
+        background: #10D8CB;
+    }
+    .p2{
+        background: #03D0B2;
+    }
+    .p3{
+        background: #0741D1;
+    }
+    .p4 {
+        background: #0741D1;
+    }*/
+
+.speaker {
+  cursor: pointer;
+}
+
+.title {
+  font-size: 2.4em;
+  text-align: center;
+  font-weight: 600;
+  margin: 0.5em 0;
+}
+
+select:focus {
+  outline: none;
+}
+
+select {
+  border: none;
+  cursor: pointer;
+  border-bottom: solid #000;
+}
+
+.my-language {
+  font-size: 1.3em;
+  text-align: center;
+  margin: 1em;
+  display: inline-block;
+}
+
+.butt1 {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  .panel {
+    font-weight: 500;
+    width: 80% !important;
+    font-size: 20px;
+  }
+
+  .translated {
+    font-size: 23px;
+    display: inline-block;
+    color: #fff;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --pink: #ffa3b0;
+  --purple: #495ce6;
+  --blue: #4285f2;
+  --teal: #05bc9e;
+  --orange: #ff7004;
+}
+
+* {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+}
+
+body {
+  background: #eee !important;
+}
+
+#navbarNavDropdown {
+  position: fixed;
+  right: 1em;
+}
+
+.title {
+  font-size: 2.4em;
+  text-align: center;
+  font-weight: 600;
+  margin: 0.5em 0;
+}
+
+select:focus {
+  outline: none;
+}
+
+select {
+  border: none;
+  cursor: pointer;
+  border-bottom: solid #000;
+  background: #fff;
+}
+
+.my-language {
+  font-size: 1.3em;
+  /* margin: 1em 20em; */
+  display: inline-block;
+}
+
+.control {
+  text-align: center;
+}
+
+.qset {
+  max-width: 775px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2em;
+  background: #fff;
+  border-radius: 20px;
+  padding: 60px 80px;
+}
+
+.question {
+  /* background: rgb(255, 209, 129);
+  background: linear-gradient(
+    111deg,
+    rgb(235, 222, 48) 0%,
+    rgb(251, 104, 6) 100%
+  ); */
+  margin: 0.5em 0 1em 0;
+  /* padding: 1em 0; */
+  font-size: 1.25em;
+  /* color: white; */
+  font-weight: 500;
+}
+
+.options {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.6em; */
+  justify-content: space-evenly;
+  margin: 10px 0 !important;
+}
+
+.options > div {
+  border: 1px solid rgb(150, 150, 150);
+  padding: 0.5em;
+  color: rgb(150, 150, 150);
+  cursor: pointer;
+  margin: 15px 0;
+}
+
+.question,
+.options > * {
+  border-radius: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.options > div:hover {
+  border: solid rgb(85, 183, 240);
+  color: rgb(85, 183, 240);
+}
+
+.btncontainer {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 1.5em;
+}
+
+.btncontainer a:hover {
+  text-decoration: none;
+}
+
+#myBar {
+  border-radius: 1em;
+  height: 10px;
+  transition: all 0.3s ease 0s;
+}
+
+#score {
+  display: none;
+}
+
+#qno {
+  text-transform: uppercase;
+  color: #777;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.q-container {
+  /* min-height: 120px; */
+}
+
+
+.outer {
+  position: relative;
+}
+
+.outer .card {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, 50%);
+  left: 50%;
+  min-width: 50vw;
+}
+
+.card-content {
+  margin: 1em 8em;
+}
+
+@media (max-width: 768px) {
+  .question {
+    font-size: 0.8em;
+  }
+  .option {
+    font-size: 0.5em;
+  }
+  .qset {
+    margin: 0 20px;
+    padding: 20px;
+  }
+  .card-content {
+    margin: 0 4em;
+  }
+
+  .outer .card {
+    transform: translate(-50%, 25%);
+  }
+}
+

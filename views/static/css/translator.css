@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --pink: #ffa3b0;
+  --purple: #495ce6;
+  --blue: #4285f2;
+  --teal: #05bc9e;
+  --orange: #ff7004;
+}
+
+* {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+}
+
+body {
+  background-color: #f1f1f1 !important;
+  font-family: "Roboto", sans-serif;
+}
+
+#container {
+  margin-top: 35px;
+}
+
+.outer,
+.outer2 {
+  margin-top: 15px;
+}
+
+textarea {
+  background-color: #fff !important;
+  width: 100%;
+  padding: 0px 20px;
+  overflow-y: auto;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: 10px 9px 11px -11px #676767;
+  box-shadow: 10px 9px 11px -11px #676767;
+}
+
+textarea:focus {
+  border: none;
+  outline: none;
+}
+
+.dropdown {
+  outline: 0;
+  border: none;
+  background-color: transparent;
+  border-color: #4284f2;
+  color: #4284f2;
+  font-style: italic;
+  transition: all 0.4s ease;
+}
+
+.right {
+  text-align: right;
+  padding-top: 10px;
+  padding-right: 5px;
+  font-size: x-large;
+  background-color: #fff;
+}
+
+.right button,
+.right span {
+  margin: 0px 4px;
+  cursor: pointer;
+  color: rgb(110, 107, 107);
+}
+.right button:hover,
+.right span:hover {
+  color: black;
+}
+
+.text-head {
+  font-size: large;
+}
+
+#translate-btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+  font-size: large;
+  padding: 7px 10px;
+  background-color: transparent;
+  color: #4284f2;
+  border-radius: 4px;
+  border: 1px solid #4284f2;
+  transition: all 0.3s ease;
+}
+
+#translate-btn:hover,
+#translate-btn:active {
+  background-color: #4284f2;
+  color: white;
+  border: 1px solid transparent;
+}
+#translate-btn:active {
+  transform: translateY(5%);
+}
